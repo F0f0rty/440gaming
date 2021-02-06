@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #171f24;
+}
+
+.container {
+  width: 80%;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  color: black;
+}
+
+.section-header {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 62px;
+}
+
+.none {
+  display: none !important;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*По основной оси(У)*/
+  align-items: center; /*По оси Х*/
+
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Russo One", sans-serif;
+
+  background-image: url("/image/header/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button {
+  border: none;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: transparent;
+}
+
+.team {
+  width: 25%;
+  height: 42px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  left: 0;
+}
+
+.news {
+  width: 25%;
+  height: 42px;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  left: 25%;
+}
+
+.vids {
+  width: 25%;
+  height: 42px;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+}
+
+.request {
+  width: 25%;
+  height: 42px;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  left: 75%;
+}
+
+.headertitle {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.header-subtitle {
+  margin: 0;
+}
+
+/* Карточки игроков */
+.main-page {
+  height: auto;
+  margin: 0;
+  position: relative;
+  display: flex;
+  background-color: rgba(202, 212, 224, 0.993);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.gamers-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 0;
+  margin-bottom: 5%;
+  width: 512px;
+  padding: 20px;
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.5);
+  background-color: rgba(196, 233, 245, 0.116);
+  border-color: black;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card-img {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.card-title {
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 15px;
+  font-size: 38px;
+}
+
+.card p {
+  font-size: 19px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+
+/*О клане*/
+.claninfo {
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about {
+  height: auto;
+  margin: 0;
+  position: relative;
+  display: flex;
+  background-color: rgba(206, 59, 39, 0.993);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.button1 {
+  font-size: 150%;
+  width: 25vw;
+  height: 48px;
+  position: absolute;
+  padding: 0%;
+  background-color: transparent;
+  border: none;
+}
+
+.button2 {
+  font-size: 150%;
+  width: 25vw;
+  height: 48px;
+  position: absolute;
+  padding: 0%;
+  background-color: transparent;
+  border: none;
+  left: 25%;
+}
+
+.button3 {
+  font-size: 150%;
+  width: 25vw;
+  height: 48px;
+  position: absolute;
+  padding: 0%;
+  background-color: transparent;
+  border: none;
+  left: 50%;
+}
+
+.button4 {
+  font-size: 150%;
+  width: 24vw;
+  height: 48px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  left: 75%;
+}
+
+.logo {
+  left: 1%;
+  animation: rotation 5s infinite linear;
+  -webkit-perspective: perspective: 240px;
+                      perspective: 240px;;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+

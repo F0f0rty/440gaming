@@ -39,7 +39,7 @@ body {
   color: #ffffff;
   font-family: "Russo One", sans-serif;
 
-  background-image: url("./image/header/header-bg.jpg");
+  background-image: url("/image/header/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

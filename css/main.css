@@ -39,7 +39,7 @@ body {
   color: #ffffff;
   font-family: "Russo One", sans-serif;
 
-  background-image: url("/image/header/header-bg.jpg");
+  background: url("../image/header/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -223,8 +223,6 @@ body {
 .logo {
   left: 1%;
   animation: rotation 5s infinite linear;
-  -webkit-perspective: perspective: 240px;
-                      perspective: 240px;;
 }
 
 @keyframes rotation {
@@ -235,4 +233,3 @@ body {
     transform: rotateY(359deg);
   }
 }
-

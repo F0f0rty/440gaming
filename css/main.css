@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #171f24;
+  background-color: #1a3045;
 }
 
 .container {
@@ -12,9 +12,7 @@ body {
   background-color: transparent;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 48px;
   margin-bottom: 48px;
-  color: black;
 }
 
 .section-header {
@@ -56,43 +54,6 @@ body {
   background-color: transparent;
 }
 
-.team {
-  width: 25%;
-  height: 42px;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  position: absolute;
-  left: 0;
-}
-
-.news {
-  width: 25%;
-  height: 42px;
-  background-color: transparent;
-  color: #ffffff;
-  position: absolute;
-  left: 25%;
-}
-
-.vids {
-  width: 25%;
-  height: 42px;
-  background-color: transparent;
-  color: #ffffff;
-  position: absolute;
-  left: 50%;
-}
-
-.request {
-  width: 25%;
-  height: 42px;
-  background-color: transparent;
-  color: #ffffff;
-  position: absolute;
-  left: 75%;
-}
-
 .headertitle {
   margin: 0;
   margin-bottom: 15px;
@@ -102,74 +63,13 @@ body {
   margin: 0;
 }
 
-/* Карточки игроков */
-.main-page {
-  height: auto;
-  margin: 0;
-  position: relative;
-  display: flex;
-  background-color: rgba(202, 212, 224, 0.993);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-}
-
-.gamers-cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  margin: 0;
-  margin-bottom: 5%;
-  width: 512px;
-  padding: 20px;
-  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.5);
-  background-color: rgba(196, 233, 245, 0.116);
-  border-color: black;
-}
-
-.card:last-child {
-  margin-bottom: 0;
-}
-
-.card-img {
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
-.card-title {
-  margin: 0;
-  margin-top: 13px;
-  margin-bottom: 15px;
-  font-size: 38px;
-}
-
-.card p {
-  font-size: 19px;
-  margin-top: 1px;
-  margin-bottom: 10px;
-}
-
 /*О клане*/
-.claninfo {
-  height: 100vh;
-  margin: 0;
-  position: relative;
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .about {
   height: auto;
   margin: 0;
   position: relative;
   display: flex;
-  background-color: rgba(206, 59, 39, 0.993);
+  background-color: #1a3045;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,6 +86,9 @@ body {
   padding: 0%;
   background-color: transparent;
   border: none;
+  left: 25%;
+  color: #ffffff;
+  text-align: center;
 }
 
 .button2 {
@@ -193,36 +96,48 @@ body {
   width: 25vw;
   height: 48px;
   position: absolute;
-  padding: 0%;
-  background-color: transparent;
-  border: none;
-  left: 25%;
-}
 
-.button3 {
-  font-size: 150%;
-  width: 25vw;
-  height: 48px;
-  position: absolute;
   padding: 0%;
   background-color: transparent;
   border: none;
   left: 50%;
+  color: #ffffff;
 }
 
-.button4 {
+.button3 {
   font-size: 150%;
   width: 24vw;
   height: 48px;
   position: absolute;
+
   background-color: transparent;
   border: none;
   left: 75%;
+  color: #ffffff;
+}
+
+.button1 h5 {
+  position: relative;
+  margin: 0%;
+}
+
+.button2 h5 {
+  position: relative;
+  margin: 0%;
+}
+
+.button3 h5 {
+  position: relative;
+  margin: 0%;
 }
 
 .logo {
+  top: -5px;
+  height: 128px;
+  width: 256px;
   left: 1%;
-  animation: rotation 5s infinite linear;
+  animation: rotation 200s infinite linear;
+  position: relative;
 }
 
 @keyframes rotation {
@@ -230,6 +145,150 @@ body {
     transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(359deg);
+    transform: rotateY(0deg);
   }
+}
+
+.container1 {
+  width: 80%;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 48px;
+  color: rgba(255, 0, 0, 0);
+}
+
+.about_team {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+  height: 90%;
+}
+
+.info {
+  background: #c4c4c400;
+  width: 50%;
+  box-shadow: 0px 10px 40px #0d4880;
+}
+
+.titles {
+  width: 25%;
+  background: #1a3045;
+}
+
+.titles li {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info h1 {
+  text-align: center;
+  color: white;
+}
+
+.titles h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.about p {
+  color: whitesmoke;
+}
+
+.main-page {
+  height: auto;
+  margin: 0;
+  position: relative;
+  display: flex;
+  background-color: #1a3045;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.section-header {
+  position: relative;
+  top: -10px;
+  color: white;
+}
+
+.gamers-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-basis: 20%;
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.card {
+  margin: 0;
+  margin-bottom: 5%;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.5);
+  background-color: rgba(196, 233, 245, 0.116);
+  border-color: black;
+  color: #ffffff;
+}
+
+.card-image {
+  display: flex;
+  width: 256px;
+  height: 84px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 38px;
+}
+
+.card p {
+  font-size: 19px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact_us {
+  height: 100vh;
+  color: white;
+}
+
+.contact_us h1 {
+  text-align: center;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-basis: 40%;
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.forma input {
+  width: 100%;
+}
+.container input {
+  width: 100%;
 }

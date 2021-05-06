@@ -4,14 +4,15 @@
 
 body {
   margin: 0;
-  background-color: #1a3045;
+  background-color: #d4d4d4;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   width: 80%;
-  background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: rgba(255, 190, 190, 0);
+  margin-right: 10%;
+  margin-left: 10%;
   margin-bottom: 48px;
 }
 
@@ -69,13 +70,12 @@ body {
   margin: 0;
   position: relative;
   display: flex;
-  background-color: #1a3045;
+  background-color: #d4d4d4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  height: 100vh;
 }
 
 .button1 {
@@ -84,11 +84,12 @@ body {
   height: 48px;
   position: absolute;
   padding: 0%;
-  background-color: transparent;
+  background-color: #323332cb;
   border: none;
   left: 25%;
   color: #ffffff;
   text-align: center;
+  border-radius: 8px;
 }
 
 .button2 {
@@ -98,10 +99,11 @@ body {
   position: absolute;
 
   padding: 0%;
-  background-color: transparent;
+  background-color: #323332cb;
   border: none;
   left: 50%;
   color: #ffffff;
+  border-radius: 8px;
 }
 
 .button3 {
@@ -110,10 +112,11 @@ body {
   height: 48px;
   position: absolute;
 
-  background-color: transparent;
+  background-color: #323332cb;
   border: none;
   left: 75%;
   color: #ffffff;
+  border-radius: 8px;
 }
 
 .button1 h5 {
@@ -140,155 +143,298 @@ body {
   position: relative;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(0deg);
-  }
+.roster {
+  height: auto;
+}
+
+.roster h1 {
+  color: #323332cb;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.playerscontainer {
+  padding-top: 2.5%;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.playerscol {
+  flex-basis: 20%;
+  padding: 2.5%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.playertscard {
+  margin-bottom: 5%;
+  height: 100%;
+  width: 220px;
+  padding: 0px;
+  box-shadow: 0px 10px 40px #323332cb;
+  background-color: #323332cb;
+  border-color: black;
+  border-radius: 8px;
+  color: #ffffff;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.playertscard img {
+  border-top: black;
+  border-radius: 8px;
+  width: 220px;
+  height: 127px;
+}
+
+.card button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .container1 {
   width: 80%;
-  background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-
-  margin-bottom: 48px;
-  color: rgba(255, 0, 0, 0);
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.about_team {
-  background-color: rgba(255, 255, 255, 0);
+.wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 5%;
-  height: 90%;
-}
-
-.info {
-  background: #c4c4c400;
-  width: 50%;
-  box-shadow: 0px 10px 40px #0d4880;
-}
-
-.titles {
-  width: 25%;
-  background: #1a3045;
-}
-
-.titles li {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.info h1 {
-  text-align: center;
-  color: white;
-}
-
-.titles h1 {
-  text-align: center;
-  color: #ffffff;
-}
-
-.about p {
-  color: whitesmoke;
-}
-
-.main-page {
-  height: auto;
-  margin: 0;
-  position: relative;
-  display: flex;
-  background-color: #1a3045;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-family: "Roboto", sans-serif;
-}
-
-.section-header {
-  position: relative;
-  top: -10px;
-  color: white;
-}
-
-.gamers-cards-wrapper {
-  display: flex;
   flex-wrap: wrap;
+  padding-top: 5%;
 }
 
-.col {
-  display: flex;
+.col1 {
   flex-basis: 20%;
-  padding: 1rem;
-  box-sizing: border-box;
   flex-shrink: 0;
+  display: flex;
 }
 
-.card {
-  margin: 0;
+.card1 {
   margin-bottom: 5%;
   height: 100%;
-  width: 100%;
-  padding: 0px;
-  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.5);
-  background-color: rgba(196, 233, 245, 0.116);
-  border-color: black;
-  color: #ffffff;
-}
-
-.card-image {
-  display: flex;
-  width: 256px;
-  height: 84px;
-  margin-bottom: 20px;
-}
-
-.card-title {
+  padding: 5%;
+  width: 30vw;
+  background-color: #323332cb;
+  box-shadow: 0px 10px 40px #323332cb;
+  border: 2px solid #323332cb;
+  border-radius: 8px;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 15px;
-  font-size: 38px;
 }
 
-.card p {
-  font-size: 19px;
-  margin-top: 1px;
-  margin-bottom: 10px;
+.card2 {
+  margin-bottom: 5%;
+  width: 256px;
+  background-color: #323332cb;
+  box-shadow: 0px 10px 40px #323332cb;
+  border: 2px solid #323332cb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card1 h1 {
+  text-align: center;
+}
+
+.card2 h1 {
   text-align: center;
 }
 
 .contact_us {
-  height: 100vh;
+  height: auto;
+}
+
+.contactcontainer {
+  padding-top: 5%;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
   color: white;
 }
 
-.contact_us h1 {
+.contactcontainer h1 {
   text-align: center;
+  color: #323332cb;
+}
+
+.contactwrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contactcol {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #323332cb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #323332cb;
+  border: 2px, gray;
+  height: auto;
+  color: #ffffff;
+}
+
+footer h1 {
+  padding-left: 43%;
+}
+
+.socialscontainer {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
   color: white;
 }
 
-.row {
+.socialswrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
-.form {
+.socialscol {
+  padding-left: 5%;
+  width: 50px;
+  flex-basis: 20%;
   display: flex;
-  flex-basis: 40%;
-  padding: 1rem;
-  box-sizing: border-box;
-  flex-shrink: 0;
 }
 
-.forma input {
-  width: 100%;
+a {
+  height: 50px;
+  width: 50px;
 }
-.container input {
+
+a img {
+  height: 50px;
+  width: 50px;
+}
+
+.popup {
+  z-index: 3;
+  position: fixed;
   width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.popup__body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  background-color: #ffffff;
+  color: black;
+  max-width: 800px;
+  max-height: 800px;
+  padding: 30px;
+  position: relative;
+}
+
+.btn2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.popup__title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.popup__text {
+  color: red;
+}
+
+.modal_bg {
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.35);
+}
+
+.modal_bg.show {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .card1 {width: 300px; margin-top: 20%;}
+  .card2 {width: 300px; margin-top: 30%;}
+  .socialscontainer {width: 100vw; margin-left: 0; margin-right: 0;}
+  footer h1 {padding-left: 0; text-align: center;}
+  
+
+
+
+
+
+
 }

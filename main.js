@@ -8,11 +8,11 @@ function scrollTo(element) {
 
 var button = document.querySelector(".button");
 var mp = document.querySelector(".about");
-var button1 = document.querySelector(".button1");
+var button1 = document.querySelector(".button12");
 var about = document.querySelector(".about");
-var button2 = document.querySelector(".button2");
+var button2 = document.querySelector(".button22");
 var roster = document.querySelector(".roster");
-var button3 = document.querySelector(".button3");
+var button3 = document.querySelector(".button32");
 var contact_us = document.querySelector(".contact_us");
 
 button.addEventListener("click", () => {
@@ -31,25 +31,26 @@ button3.addEventListener("click", () => {
   scrollTo(contact_us);
 });
 
-let modal = document.querySelector('.popup');
-let modalBtn = document.querySelector('.button4');
-let modalBg = document.querySelector('.modal_bg');
-let modalcloseBtn = document.querySelector('.btn2');
 
-modalBtn.addEventListener('click', function(){
-	modal.classList.add('show');
-	modalBg.classList.add('show');
-});
+const popupbuttons = document.querySelectorAll('a[href^="#"]');
+console.log(popupbuttons)
+for (let popupbutton of popupbuttons) {
+  popupbutton.addEventListener('click', function (e) {
+    e.preventDefault();
+    let id = popupbutton.getAttribute('href');
+    console.log(id)
+    document.querySelector(id).classList.add('show')      
+  });
+};
 
-document.addEventListener('click', function(e){
-	let click = e.target.classList.value;
-	if (click === 'modal_bg show') {
-		modal.classList.remove('show');
-		modalBg.classList.remove('show');
-	}
-})
 
-modalcloseBtn.addEventListener('click', function(){
-	modal.classList.remove('show');
-	modalBg.classList.remove('show');
-});
+const popupclosebuttons = document.querySelectorAll(".btn2");
+for (let popupclosebutton of popupclosebuttons) {
+  popupclosebutton.addEventListener('click', function (e) {
+    e.preventDefault();
+    let id = popupclosebutton.getAttribute('href');
+    console.log('')
+    document.querySelector(id).classList.remove('show')      
+  });
+};
+

@@ -6,14 +6,14 @@ function scrollTo(element) {
   });
 }
 
-const button = document.querySelector(".button");
-const mp = document.querySelector(".about");
-const button1 = document.querySelector(".button12");
-const about = document.querySelector(".about");
-const button2 = document.querySelector(".button22");
-const roster = document.querySelector(".roster");
-const button3 = document.querySelector(".button32");
-const contactUs = document.querySelector(".contact_us");
+var button = document.querySelector(".button");
+var mp = document.querySelector(".about");
+var button1 = document.querySelector(".button12");
+var about = document.querySelector(".about");
+var button2 = document.querySelector(".button22");
+var roster = document.querySelector(".roster");
+var button3 = document.querySelector(".button32");
+var contact_us = document.querySelector(".contact_us");
 
 button.addEventListener("click", () => {
   scrollTo(about);
@@ -28,29 +28,29 @@ button2.addEventListener("click", () => {
 });
 
 button3.addEventListener("click", () => {
-  scrollTo(contactUs);
+  scrollTo(contact_us);
 });
 
-const popupButtons = document.querySelectorAll('a[href^="#"]');
-console.log(popupButtons);
-for (let popupButton of popupButtons) {
-  popupButton.addEventListener("click", function (e) {
+
+const popupbuttons = document.querySelectorAll('a[href^="#"]');
+console.log(popupbuttons)
+for (let popupbutton of popupbuttons) {
+  popupbutton.addEventListener('click', function (e) {
     e.preventDefault();
-    let id = popupButton.getAttribute("href");
-    console.log(id);
-    document.querySelector(id).classList.add("show");
+    let id = popupbutton.getAttribute('href');
+    console.log(id)
+    document.querySelector(id).classList.add('show')      
   });
-}
+};
 
-const popupCloseButtons = document.querySelectorAll(".btn2");
-for (let popupCloseButton of popupCloseButtons) {
-  popupCloseButton.addEventListener("click", function (e) {
+
+const popupclosebuttons = document.querySelectorAll(".btn2");
+for (let popupclosebutton of popupclosebuttons) {
+  popupclosebutton.addEventListener('click', function (e) {
     e.preventDefault();
-    let id = popupCloseButton.getAttribute("href");
-    console.log("");
-    document.querySelector(id).classList.remove("show");
+    let id = popupclosebutton.getAttribute('href');
+    console.log('')
+    document.querySelector(id).classList.remove('show')      
   });
-}
-
-
+};
 
